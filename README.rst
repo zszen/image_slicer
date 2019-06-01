@@ -47,8 +47,6 @@ Slice an image with Python:
 
 	>>> import image_slicer
 	>>> image_slicer.slice('cake.jpg', 5, 1)
-	(<Tile #1 - cake_01_01.png>, <Tile #2 - cake_01_02.png>, <Tile #3 - cake_02_01.png>, <Tile #4 - cake_02_02.png>)
-
 
 ... or from the command line:
 
