@@ -16,6 +16,7 @@ Image Slicer
 Notice
 ----------------
 I modified param for correct the command.
+
 slice-image cake.jpg 5 1 split with 5x1 counts
 
 What does it do?
@@ -28,9 +29,9 @@ Whether you are planning a collaborative art project, creating a jigsaw puzzle, 
 Installation
 ------------
 
-.. code-block:: bash
+.. code-block:: bash (download with project)
 
-	$ pip install image_slicer
+	$ pip3 install -e ./
 
 *Python versions supported:*
 
