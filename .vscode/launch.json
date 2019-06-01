@@ -8,16 +8,22 @@
       "name": "Python: Current",
       "type": "python",
       "request": "launch",
-      "program": "${file}",
+      // "program": "${file}",
+      "program": "${workspaceRoot}/bin/slice-image",
       // "args": [
       //   "./test/p1/p1.png"
       //   ,"5"
       //   ,"1"
       // ],
+      // "args": [
+      //   "./test/basic/basictiles.png"
+      //   ,"8"
+      //   ,"15"
+      // ],
       "args": [
-        "./test/basic/basictiles.png"
-        ,"8"
-        ,"15"
+        "/Users/zszen/Desktop/test/godot/godot_lesson/camera_faraway/assets/p2/p2.png"
+        ,"6"
+        ,"1"
       ],
       "console": "integratedTerminal"
     }
