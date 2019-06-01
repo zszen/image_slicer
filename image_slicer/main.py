@@ -117,7 +117,8 @@ def validate_image_col_row(image , col , row):
 
 
 
-def slice(filename, number_tiles=None, col=None, row=None, save=True):
+# def slice(filename, number_tiles=None, col=None, row=None, save=True):
+def slice(filename, columns=None, rows=None, save=True):
     """
     Split an image into a specified number of tiles.
 
@@ -134,17 +135,17 @@ def slice(filename, number_tiles=None, col=None, row=None, save=True):
     im = Image.open(filename)
     im_w, im_h = im.size
 
-    columns = 0
-    rows = 0
-    if not number_tiles is None:
-        validate_image(im, number_tiles)
-        columns, rows = calc_columns_rows(number_tiles)
-        extras = (columns * rows) - number_tiles
-    else:
-        validate_image_col_row(im, col, row)
-        columns = col
-        rows = row
-        extras = (columns * rows) - number_tiles
+    # columns = 0
+    # rows = 0
+    # if not number_tiles is None:
+    #     validate_image(im, number_tiles)
+    #     columns, rows = calc_columns_rows(number_tiles)
+    #     extras = (columns * rows) - number_tiles
+    # else:
+    #     validate_image_col_row(im, col, row)
+    #     columns = col
+    #     rows = row
+    #     extras = (columns * rows) - number_tiles
 
 
     tile_w, tile_h = int(floor(im_w / columns)), int(floor(im_h / rows))

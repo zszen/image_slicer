@@ -4,17 +4,16 @@ import os
 import sys
 
 try:
-        from setuptools import setup
+    from setuptools import setup
 except ImportError:
-        from distutils.core import setup
+    from distutils.core import setup
 
 
 setup(
     name='image_slicer',
-    version='0.2.0',
+    version='0.2.1',
     description='Cut images into tiles and reassemble them..',
-    long_description=open('README.rst').read() + '\n\n' +
-                     open('HISTORY.rst').read(),
+    long_description=open('README.rst').read() + '\n\n' + open('HISTORY.rst').read(),
     author='Sam Dobson',
     author_email='sjd333@gmail.com',
     url='http://samdobson.github.io/image_slicer',
