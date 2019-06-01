@@ -9,10 +9,15 @@
       "type": "python",
       "request": "launch",
       "program": "${file}",
+      // "args": [
+      //   "./test/p1/p1.png"
+      //   ,"5"
+      //   ,"1"
+      // ],
       "args": [
-        "./test/p1.png"
-        ,"5"
-        ,"1"
+        "./test/basic/basictiles.png"
+        ,"8"
+        ,"15"
       ],
       "console": "integratedTerminal"
     }
